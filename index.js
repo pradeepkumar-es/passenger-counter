@@ -20,9 +20,9 @@ function save () {
     count=0;
 }
 let welcomeEl = document.getElementById("welcome-el");
-let name="Pradeep"
+let hey="Hey"
 let greeting = "Welcome Back"
-welcomeEl.innerText= name + "," +greeting;
+welcomeEl.innerText= hey + "!" +greeting;
 let emoji = " 👋";
 // welcomeEl.innerText = welcomeEl.innerText + emoji; 
 //shortcut of above =>   += operator
