@@ -20,9 +20,20 @@ function save () {
     count=0;
 }
 let welcomeEl = document.getElementById("welcome-el");
-let hey="Hey"
+let hey="Hey, "
 let greeting = "Welcome Back"
-welcomeEl.innerText= hey + "!" +greeting;
+
+let day = new Date();  //all thing related to time & date 
+let timeOfDay = day.getHours(); //only hours
+let salutation
+if(timeOfDay>4 && timeOfDay<12 ){
+    salutation = "Good Morning! "
+}else if(timeOfDay>12 && timeOfDay<18){
+    salutation = "Good Afternoon! "
+}else{
+    salutation ="Hope Night are going well! "
+}
+welcomeEl.innerText= hey + salutation +greeting;
 let emoji = " 👋";
 // welcomeEl.innerText = welcomeEl.innerText + emoji; 
 //shortcut of above =>   += operator
